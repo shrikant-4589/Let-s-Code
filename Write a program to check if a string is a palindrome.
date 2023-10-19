@@ -1,0 +1,14 @@
+''' Write a program to check if a string is a palindrome. '''
+
+str = (input("Enter a string: "))
+newStr = ''
+for i in str:
+    newStr = i + newStr     ### here i is first adding the letter and then adding it to newStr 
+                                ex. str = geeks  newStr = ''
+                                    newStr = i + newStr ---->  g+''--> g ----> eg ----> eeg ----> keeg ----> skeeg   
+                            ### but if we do newStr = newStr + 1  --> first takes letter and adds to the 
+                                    newStr = newStr + i ---->  g ----> g-----> ge-----> gee ----> geek ----> geeks
+if newStr == str:
+    print("The string is palindrome")
+else:
+    print("The string is not palindrome")
