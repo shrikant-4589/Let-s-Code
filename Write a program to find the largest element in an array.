@@ -1,0 +1,9 @@
+''' Write a program to find the largest element in an array '''
+
+# Write a program to find the largest element in an array.
+num = (15,45,78,12,85,63,21,5)
+max = 0
+for i in num:
+    if i > max:
+        max = i
+print(max)
